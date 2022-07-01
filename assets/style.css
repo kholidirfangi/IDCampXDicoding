@@ -1,0 +1,355 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Verdana, sans-serif;
+}
+
+header {
+    background-image: url('img/alun-alun-kebumen.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    position: relative;
+    margin: 45px auto 0;
+    width: 100%;
+    padding: 30px 0;
+
+}
+
+
+h1 {
+    margin-top: 20px;
+    padding-top: 30px;
+    color: #FFA500;
+    text-align: center;
+    font-size: 3rem;
+    text-shadow: 1px 1px  #edfafd;
+}
+
+h2 {
+      color: #1F4690;
+      padding: 5px 0;
+}
+
+.thumbnail {
+    color: #edfafd;
+    margin: 10px auto;
+    padding: 30px;
+    font-size: 1.3rem;
+    button: 0;
+    text-align: center;
+    background-color: rgba(0,0,0,0.3);
+}
+
+
+nav {
+    background-color: #1F4690;
+    height: 50px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 99;
+}
+
+ul.navbar-list { 
+    display: flex;
+    list-style: none;
+    width: 80%;
+    margin: auto;
+    margin-top: 3px;
+}
+
+li {
+    flex-grow: 1;
+    line-height: 50px;
+    margin-top: -3px;
+}
+   
+a {
+    text-decoration: none;
+    color: #FFE5B4;
+    font-weight: bold;
+    padding: 4px;
+}
+
+a:hover {
+     color: #FFA500;
+     border-bottom: 3px solid #FFA500;
+}
+
+.nav-click {
+    color:  #FFA500;
+    border-bottom: 3px solid #FFA500;
+}
+
+.container {
+    width: 75%;
+    padding: 40px;
+    line-height: 1.5em;
+    float: left;
+}
+
+h2 {
+    margin-bottom: 10px; 
+}
+
+h3 {
+    margin-top: 20px;
+}
+article {
+    padding: 50px 0;
+}
+
+p {
+    margin-bottom: 5px;
+}
+
+ul.letak-wilayah {
+    margin-left: 20px;
+}
+
+.photos {
+    border-radius: 10px;
+    width: 40%;
+    margin: 8px;
+}
+
+.list-img {
+    display: flex;
+    flex-wrap: wrap;
+  
+}
+
+.fasilitas {
+    margin-left: 20px;
+}
+
+img:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+aside {
+    width: 25%;
+    background-color:  #1F4690;
+    float: right;
+    border-radius: 5px;
+    margin-top: 50px;
+    box-shadow: 2px 2px 5px rgba(19, 85, 137, 0.4);
+}
+
+.container-profil {
+    margin: 10px auto;
+    padding: 10px;
+    width: 80%;
+    color: white;
+}
+
+.biodata, .kebumen {
+    color: #FFA500;
+}
+
+.logo {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 10px;
+    border-radius: 5px;
+}
+
+.foto {
+    margin: auto;
+    width: 80%;
+    height: 100%;
+    padding: 10px 0;
+}
+
+footer {
+    background: #FFA500;
+    width: 100%;
+}
+
+.clear {
+    clear: both;
+}
+
+.copyright  {
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.author {
+   font-weight: normal; 
+   color: white;
+}
+.author:hover {
+    color: #1F4690;
+    cursor: pointer;
+}
+
+.container-logo {
+    text-align: center;
+    color: white;
+    padding-bottom: 10px;
+}
+
+
+.julukan {
+    font-size: 0.9em;
+}
+
+.info {
+    text-align: left;
+    padding: 10px 30px;
+    color:  #FFA500;
+    background: rgba(58, 91, 160, 0.5);
+}
+
+th, td {
+    padding: 10px 20px;
+    text-align: left;
+}
+/* Responsive */
+@media screen and (max-width: 768px) {
+        header {
+            height: 60vh;
+            width: 100%;
+            margin: 5px 0 0;
+        }
+
+        li {
+            font-size: 14px;
+        }
+        
+        h1 {
+            font-size: 2rem;
+        }
+
+        .thumbnail {
+            font-size: 1rem;
+        }
+
+        .photos {
+        width: 100%;
+    }
+
+    .container-logo, .container-profil {
+        font-size: 0.7em;
+    }
+    
+    th, td {
+        padding: 5px;
+    }
+
+
+}
+
+@media screen and (max-width: 495px) {
+    header {
+        margin-top: 25px;
+        width: 100%;
+        height: 50vh;
+    }
+
+    /* ul */
+    ul.navbar-list-block {
+        display: block;
+        background:  rgba(58, 91, 160, 0.9);
+        border-radius: 5px;
+        width: 50%;
+        position: absolute;
+        right: 4px;
+        top: 50px;
+        box-shadow: 2px 3px 5px rgba(0,0,0,0.2);
+    }
+
+    li {
+        display: none;
+    }
+
+    div.hamburger-menu {
+    position: absolute;
+    right: 10px;
+    top: 9px;
+    z-index: 999;
+    }
+    
+    span.hamburger {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background: white;
+        margin: 5px;
+    }
+    
+    li.li-block {
+        display: block;
+        padding: 5px;
+        margin-left: 10px;
+    }
+  
+
+    a { 
+        color: #FFE5B4;
+        font-size: 12px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .thumbnail {
+        font-size: 0.9rem;
+    }
+
+    aside {
+        width: 100%;
+    }
+
+    .photos, .container {
+        width: 100%;
+    }
+
+    .container-logo, .container-profil {
+        font-size: 1em;
+    }
+
+    .author {
+        font-size: 1em;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
